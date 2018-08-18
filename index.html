@@ -20,21 +20,27 @@
 	}
 	</script>
 		<style>
-			body { background-color: #ffffff;
-			color: #000000;
-			}
+			a:link{color: #ffffff;font-family: Arial;}
+			a:visited {color: #e5e5e5; font-family: Arial;}
+			a:hover {color: #ffffff;font-family: Arial; text-decoration: underline;}
+			
+			body { background-color: #1a2838; color: #ffffff; font-family: Arial;}
 		</style>
 	</head>
 	<body>
-		<div align="center">
-			<a href="https://duckduckgo.com" target="_blank"><img src="https://duckduckgo.com/assets/logo_homepage.normal.v107.svg" width="300" alt="Normally the DuckDuckGo logo is here, I swear"></a><br />
+		<!--Top Bar-->
+		<div style="color: #BDBBB9; background-color: #171a21; height: 100px; margin: 0; padding: 0; position: absolute; top: 0; left: 0; width: 100%;">
+		<table  align="center"><tr align="center" style="height: 99px; margin: 10; padding: 10; vertical-align: middle;"><td><img src="pics/steam.png"></td><td><h1>Steam Browser Home</h1></td></tr></table>
+		</div>
+		<!--Main-->
+		<div align="center" style="padding-top: 100px;">
 			<form id="searchbar" action="http://duckduckgo.com" method="get" target="_blank">
 			<div style="border:1px solid #D2D2D2; display:inline-block">
 				<table><tr>
 					<td><input style="height:30px;width:300px;border:0;" type="text" id="q" name="q" placeholder="&nbsp;Search" maxlength="128"/></td>
-					<td style="border:1px solid #D2D2D2; display:inline-block"><input onclick="duckduckgo()" type="image" src="pics/duckduckgo.png" height="32" width="32" alt="DuckDuckGo" style="vertical-align: bottom;border-width: 1px; border-color: #000000;"/></td>
-	                		<td style="border:1px solid #D2D2D2; display:inline-block"><input onclick="google()" type="image" src="pics/google.png" height="32" width="32" alt="Google" style="vertical-align: bottom;"/></td>
-				    	<td style="border:1px solid #D2D2D2; display:inline-block"><input onclick="youtube()" type="image" src="pics/youtube.png" height="32" width="32" alt="YouTube" style="vertical-align: bottom;"/></td>
+					<td style="background-color: #ffffff; border:1px solid #D2D2D2; display:inline-block"><input onclick="duckduckgo()" type="image" src="pics/duckduckgo.png" height="32" width="32" alt="DuckDuckGo" style="vertical-align: bottom;border-width: 1px; border-color: #000000;"/></td>
+	                <td style="background-color: #ffffff; border:1px solid #D2D2D2; display:inline-block"><input onclick="google()" type="image" src="pics/google.png" height="32" width="32" alt="Google" style="vertical-align: bottom;"/></td>
+				    <td style="background-color: #ffffff; border:1px solid #D2D2D2; display:inline-block"><input onclick="youtube()" type="image" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-512.png" height="32" width="32" alt="Youtube" style="vertical-align: bottom;"/></td>
 				</tr></table>
 			</div>
 			</form>
